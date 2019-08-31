@@ -21,7 +21,7 @@ int main()
 	{
 		if (*iter == '(')
 		{
-			stack.push(string(1, *iter));
+			stack.push(string(1, *iter)); //顺序容器构造函数C seq(n,t),使seq包含n个初始化为值t的元素
 			++iter;
 			while (*iter != ')')
 			{
